@@ -80,6 +80,35 @@
         </ul>
     </div>
 
+    <!-- Event snippet for Visualização de página (1) conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17759966717/_g9mCOT79sYbEP2rzpRC',
+      'value': 1.0,
+      'currency': 'BRL'
+  });
+</script>
+
+    <!-- Event snippet for Visualização de página (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17759966717/_g9mCOT79sYbEP2rzpRC',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
     <!-- SÓCIOS -->
     <div style="background:#fff; padding:25px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,0.12); margin-bottom:25px;">
         <h2 style="margin-top:0; color:#e52e71;">📌 Quadro de Sócios e Administradores</h2>
